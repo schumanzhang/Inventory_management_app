@@ -21,18 +21,19 @@ This set of APIs enables the user to perform CRUD operations on shopping centres
 1) Navigate to the /api directory
 2) npm test
 
-###Endpoints
+### Endpoints
+
 All endpoints require a user-id-token in the header. Valid user-id-tokens are 5448320 and 8046270. This is to simulate an authentication system. 
 
-GET api/shopping/objects 
+#### GET api/shopping/objects 
 
 Retrieves all shopping centres
 
-GET api/shopping/objects/:id
+#### GET api/shopping/objects/:id
 
 Retrieves the shopping centre given the unique ID
 
-POST api/shopping/objects
+#### POST api/shopping/objects
 
 Creates a new shopping centre
 Sample request body:
@@ -42,7 +43,7 @@ Sample request body:
     "assets": ['a', 'b']
 }
 
-PUT api/shopping/objects/:id
+#### PUT api/shopping/objects/:id
 
 Updates a shopping centre given unique ID
 Sample request body:
@@ -52,24 +53,24 @@ Sample request body:
     "assets": ['a', 'b']
 }
 
-DELETE api/shopping/objects/:id
+#### DELETE api/shopping/objects/:id
 
 Deletes a shopping centre given the unique ID
 
 
-GET api/assets/objects 
+#### GET api/assets/objects 
 
 Retrieves all assets
 
-GET api/assets/objects/:id
+#### GET api/assets/objects/:id
 
 Retrieves all assets given a unique ID
 
-GET api/assets/search/:shopping?/:status?/:name?
+#### GET api/assets/search/:shopping?/:status?/:name?
 
 Performs search operation on assets, search by shopping centre name, and status and asset name. Parameters optional.
 
-POST api/assets/objects
+#### POST api/assets/objects
 
 Creates a new asset
 Sample request body:
@@ -81,7 +82,7 @@ Sample request body:
     "status": false
 }
 
-PUT api/assets/objects/:id
+#### PUT api/assets/objects/:id
 
 Updates an asset given unique ID
 Sample request body:
@@ -93,7 +94,7 @@ Sample request body:
     "status": true
 }
 
-DELETE api/assets/objects/:id
+#### DELETE api/assets/objects/:id
 
 Deletes an asset given the unique ID
 
