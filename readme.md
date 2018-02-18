@@ -23,7 +23,7 @@ This set of APIs enables the user to perform CRUD operations on shopping centres
 
 ### Endpoints
 
-All endpoints require a user-id-token in the header. Valid user-id-tokens are 5448320 and 8046270. This is to simulate an authentication system. 
+All endpoints require a user-id-token in the header. Valid tokens are 5448320 and 8046270. This is to simulate an authentication system. 
 
 #### GET api/shopping/objects 
 
@@ -36,27 +36,32 @@ Retrieves the shopping centre given the unique ID
 #### POST api/shopping/objects
 
 Creates a new shopping centre
+
 Sample request body:
+```
 {
     "name": "Westfields",
     "address": 19 Ramsay St,
     "assets": ['a', 'b']
 }
+```
 
 #### PUT api/shopping/objects/:id
 
 Updates a shopping centre given unique ID
+
 Sample request body:
+```
 {
     "name": "Bunnings",
     "address": 19 Ramsay St,
     "assets": ['a', 'b']
 }
+```
 
 #### DELETE api/shopping/objects/:id
 
 Deletes a shopping centre given the unique ID
-
 
 #### GET api/assets/objects 
 
@@ -73,7 +78,9 @@ Performs search operation on assets, search by shopping centre name, and status 
 #### POST api/assets/objects
 
 Creates a new asset
+
 Sample request body:
+```
 {	
 	"name": "hello",
 	"dimensions": [139, 245],
@@ -81,11 +88,14 @@ Sample request body:
 	"shopping": "IGA",
     "status": false
 }
+```
 
 #### PUT api/assets/objects/:id
 
 Updates an asset given unique ID
+
 Sample request body:
+```
 {	
 	"name": "hello",
 	"dimensions": [139, 245],
@@ -93,6 +103,7 @@ Sample request body:
 	"shopping": "IGA",
     "status": true
 }
+```
 
 #### DELETE api/assets/objects/:id
 
