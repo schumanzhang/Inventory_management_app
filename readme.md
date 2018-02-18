@@ -7,8 +7,6 @@ This set of APIs enables the user to perform CRUD operations on shopping centres
 1) Install node.js
 2) Install mongodb 
 3) Start mongodb, create two databases called inventory_app and inventory_app_test
-    use inventory_app
-    use inventory_app_test
 
 ### Running the APIs
 
